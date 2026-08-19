@@ -9,7 +9,7 @@ export default defineConfig({
   ],
   server: {
     proxy: {
-      '/api': 'https://lingora-learning-platform.onrender.com',
+      '/api': 'http://127.0.0.1:8000',
     },
     watch: {
       usePolling: true,
