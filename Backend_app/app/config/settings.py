@@ -25,13 +25,13 @@ SECRET_KEY = 'django-insecure-2p!^vllp-o81sxg3lc#7eq5r_j-+m#hrnhog=y%3&z%rua-hws
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1',"lingora-learning-platform.onrender.com"]
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '127.0.0.1,localhost,lingora-learning-platform.onrender.com,.onrender.com').split(',')
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'corsheaders'
+    'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -60,7 +60,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000","https://lingora-learning-platform-1.onrender.com"
+    "http://localhost:3000",
+    "http://localhost:5173",
+    "https://lingora-learning-platform-1.onrender.com",
+    "https://lingora-learning-platform.onrender.com",
 ]
 
 ROOT_URLCONF = 'config.urls'
