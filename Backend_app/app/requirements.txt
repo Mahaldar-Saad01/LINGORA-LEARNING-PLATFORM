@@ -20,3 +20,4 @@ huggingface-hub>=0.33,<2
 
 # Schema Validation & Utilities
 jsonschema>=4.20,<5
+gunicorn>=20.1,<2
