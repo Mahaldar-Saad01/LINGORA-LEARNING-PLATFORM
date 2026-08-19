@@ -1,0 +1,22 @@
+# Core Framework & REST API
+django>=5.2,<6.1
+djangorestframework>=3.15,<4
+djangorestframework-simplejwt>=5.3,<6
+
+# Database & Environment
+psycopg[binary]>=3.2,<4
+python-dotenv>=1,<2
+tzdata>=2024.1
+
+# Asynchronous Background Tasks & Cache
+celery[redis]>=5.5,<6
+redis>=5.0,<6
+
+# AI & LLM Providers
+groq>=0.18.0
+google-generativeai>=0.8,<1
+google-genai>=0.1,<2
+huggingface-hub>=0.33,<2
+
+# Schema Validation & Utilities
+jsonschema>=4.20,<5
