@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import LessonNode from '../components/pag_lesson/LessonNode'
+import LessonNode from '../components/pag_lesson/lessonnode'
 import AnimatedBackgroundPaths from '../components/AnimatedBackgroundpaths'
 import AnimalAvatar from '../components/AnimalAvatar'
 import {

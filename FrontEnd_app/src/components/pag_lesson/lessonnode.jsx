@@ -80,4 +80,5 @@ function LessonNode({
     </div>
   );
 }
+
 export default LessonNode;
