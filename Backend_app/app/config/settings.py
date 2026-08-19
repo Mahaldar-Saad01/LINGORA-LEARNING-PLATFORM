@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-2p!^vllp-o81sxg3lc#7eq5r_j-+m#hrnhog=y%3&z%rua-hws
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'testserver']
+ALLOWED_HOSTS = ['127.0.0.1',"lingora-learning-platform.onrender.com"]
 
 
 # Application definition
